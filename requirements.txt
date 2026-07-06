@@ -1,0 +1,10 @@
+torch
+gymnasium
+highway-env
+numpy
+matplotlib
+imageio
+opencv-python
+scikit-image
+Pillow
+tqdm
