@@ -36,57 +36,18 @@ Selected outputs are in `results/`:
 | Prediction error vs. horizon | `results/error_vs_horizon.png` |
 | Imagination-horizon ablation | `results/ablation_horizon.png` |
 
-![Learning curves](results/learning_curves.png)
-
-![Reconstruction quality](results/reconstruction_quality.png)
-
-![Prediction error vs. horizon](results/error_vs_horizon.png)
-
 > **Note:** Trained model checkpoints (`.pt`, ~44 MB each) are not included because they exceed GitHub's file-size limits. Re-run the notebook to regenerate them, or distribute them via [Git LFS](https://git-lfs.com/) or a GitHub Release.
 
 ## Repository structure
 
 ```
 .
-├── notebooks/
-│   └── World_Model.ipynb        # Full implementation: world model, imagination training, evaluation
+├── World_Model.ipynb       
 ├── results/                     # Plots and GIFs from training/evaluation
-├── reports/
-│   ├── Final_Report.pdf
-│   ├── DefaultProject.docx
-│   ├── Option1_project_prompt.pdf
-│   └── Option2_project_prompt.pdf
+├── Final_Report.pdf
 ├── requirements.txt
 └── README.md
 ```
-
-## Getting started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/<your-username>/TinyDreamer-World-Model.git
-   cd TinyDreamer-World-Model
-   ```
-
-2. (Recommended) Create and activate a virtual environment:
-
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate      # On Windows: .venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Open the notebook. A GPU is strongly recommended for training (Google Colab with a GPU runtime works well):
-
-   ```bash
-   jupyter notebook notebooks/World_Model.ipynb
-   ```
 
 ## Requirements
 
